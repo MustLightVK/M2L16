@@ -418,6 +418,7 @@ footer{
     }
     .offer__image{
         width: 95%;
+        height: auto;
     }
     .offer__title{
         width: 320px;
@@ -428,8 +429,10 @@ footer{
     .offer__bg1{
         transform: scale(0.65);
         left: -102.5px;
+        top: -134px;
     }
     .offer__bg2{
+        top: -274px;
         right: -290px;
         transform: scale(0.65);
     }
