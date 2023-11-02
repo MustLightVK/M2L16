@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css.map">
+
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/main.css">
     
-    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.js.map" defer></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js" defer></script>
 
 </head>
 <body>
@@ -32,14 +36,14 @@
     <section class="offer-section">
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                <div class="col-xl-5">
+                <div class="col-xl-5 col-md-5">
                     <div class="offer-wrapper">
-                        <h1 class="offer__title">Добро пожаловать в наш детский клуб</h1>
+                        <h1 class="offer__title">Добро пожаловать <br> в наш детский клуб</h1>
                         <p class="offer__text">Мы предлагаем уникальные развивающие игры для детей возрастом от 2 до 6 лет. Познавательное обучение через веччелые игры - наша страсть!</p>
-                        <button class="offer__btn btn">Присоединиться к нам</button>
+                        <a class="offer__btn btn" href="#forma">Присоединиться к нам</a>
                     </div>
                 </div>
-                <div class="col-xl-7">
+                <div class="col-xl-7 col-md-7">
                     <div class="offer__image-wrapper">
                         <img src="img/section1.jpg" alt="hand" class="offer__image">
                         <div class="offer__bg2"></div>
@@ -55,7 +59,7 @@
             <div class="play__bg1"></div>
             <h2 class="section-title">Наши развивающие игры</h2>
             <div class="row justify-content-between align-items-center">
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-md-12">
                     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -83,11 +87,11 @@
                         </button>
                       </div>
                 </div>
-                <div class="col-xl-5">
+                <div class="col-xl-5 col-md-12">
                     <div class="play-wrapper">
                         <h3 class="play__title">Игры, которые развивают воображение и интеллект!</h3>
                         <p class="play__text">Наши разнообразные игры способствуют развитию умственных и физических навыков детей. От азбуки до математики - учиться легко и весело!</p>
-                        <button class="play__btn btn">Узнать больше</button>
+                        <a class="play__btn btn" href="#forma">Узнать больше</a>
                     </div>
                 </div>
             </div>
@@ -97,13 +101,14 @@
     <section class="teach-section">
         <div class="container">
             <h2 class="section-title teach-title">Опытные и заботливые педагоги</h2>
+            <p class="gallery-text-md">Наша команда состоит из опытных педагогов, специализирующихся на обучении малышей. Мы создаем безопастную и дружественную среду для их развития.</p> 
             <div class="gallery-wrapper">
                 <p class="gallery-text">Наша команда состоит из опытных педагогов, специализирующихся на обучении малышей. Мы создаем безопастную и дружественную среду для их развития.</p>   
-                <img src="img/gallery1.jpg" alt class="gal-1">      
-                <img src="img/gallery2.jpg" alt class="gal-2"> 
-                <img src="img/gallery3.jpg" alt class="gal-3">
-                <img src="img/gallery4.jpg" alt class="gal-4">
-                <img src="img/gallery5.jpg" alt class="gal-5">     
+                    <img src="img/gallery1.jpg" alt="Педагог и дети. Один из детей поднял руку." class="gal-1">      
+                    <img src="img/gallery2.jpg" alt="Педагог и ребенок собирают конструктор." class="gal-2"> 
+                    <img src="img/gallery3.jpg" alt="Педагог и дети собирают конструктор." class="gal-3">
+                    <img src="img/gallery4.jpg" alt="Ребенок смотрит тетрадь с картинками." class="gal-4">
+                    <img src="img/gallery5.jpg" alt="Педагог и дети рисуют." class="gal-5">     
             </div>
         </div>
     </section>
@@ -125,16 +130,16 @@
                     <p class="advantage__text">Гибкое расписание занятий</p>
                 </div>
             </div>
-            <button class="choose__btn btn">Записаться сейчас</button>
+            <a class="choose__btn btn" href="#forma">Записаться сейчас</a>
         </div>
     </section>
 
-    <section class="join-section">
+    <section class="join-section" id="forma">
         <div class="container">
             <h2 class="section-title join__title">Присоединяйтесь к нашему клубу прямо сейчас!</h2>
             <p class="join__text">Заполняйте форму регистрации и начините увлекательное приключение развития для вашего ребенка.</p>
             <div class="row align-items-center justify-content-between">
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-12">
                     <form action="#" class="form">
                         <input type="text" placeholder="Имя" required>
                         <input type="mail" placeholder="E-mail" required>
@@ -142,10 +147,11 @@
                         <button class="submit-btn btn">Зарегистрироваться</button>
                     </form>
                 </div>
-                <div class="col-xl-5">
+                <div class="col-xl-5 col-md-12">
                     <div class="join__image-wrapper">
                         <div class="join__bg1"></div>
                         <img src="img/girl.png" alt="girl" class="join__image">
+                        <div class="join__image_girlmd"></div>
                     </div>
                 </div>
             </div>
