@@ -481,6 +481,13 @@ footer{
     .gallery-text{
         display: none;
     }
+    .gallery-text-md{
+        display:block;
+        width: 100%;
+        margin-bottom: 53px;
+
+        text-align: center;
+    }
     .gal-1{
         grid-row: 3;
         grid-column: 1;
